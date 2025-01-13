@@ -1,0 +1,23 @@
+### vagrant file ###
+
+vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+  config.vm.network "forwarded_port", guest: 80, host:8090 // configuração de portas 
+  config.vm.network "public_network", ip "192.168.1.1", bridge: "placarede1" // configura ip publico e placa de rede
+  
+  
+  */----------------------------------------------------------------------------------------
+  shell
+   config.vm.provision "shell", 
+		inline: "apt update && apt install nginx -y && service nginx start" // ins
+   path: "script.sh"
+ -----------------------------------------------------------------------------------------/*
+ */----------------------------------------------------------------------------------------
+ ansible
+ config.vm.provision "ansible" do |ansible|
+		ansible.playbook = "playbook.yml"
+ -----------------------------------------------------------------------------------------/*
+ 
+ 
+  config.vm.synced_folder "site/", "/var/www/html" 
+end
