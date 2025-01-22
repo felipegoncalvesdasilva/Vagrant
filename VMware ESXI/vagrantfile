@@ -1,0 +1,26 @@
+Vagrant.configure('2') do |config|
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.define "WEB01" do |config|
+    config.vm.box = "StefanScherer/windows_2016"
+    config.vm.hostname = "WEB01"
+    config.vm.guest = :windows
+    config.vm.communicator = "winrm"
+    config.vm.boot_timeout = 100
+    config.vm.graceful_halt_timeout = 100
+    config.winrm.timeout = 120
+    config.winrm.username = "Administrator"
+    config.winrm.password = "PASSWORD"
+    config.winrm.transport = :plaintext
+    config.winrm.basic_auth_only = true
+    config.vm.provision "shell", inline: "Rename-Computer -NewName WEB01"
+    config.vm.provision :reload
+
+    config.vm.provider :vmware_esxi do |esxi|
+      esxi.esxi_hostname = "192.168.86.10"
+      esxi.esxi_username = "root"
+      esxi.esxi_password = "bgl@1234"
+      #esxi.guest_memsize = "2048"
+      #esxi.guest_numvcpus = "2"
+    end
+  end
+end
