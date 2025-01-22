@@ -16,9 +16,9 @@ Vagrant.configure('2') do |config|
     config.vm.provision :reload
 
     config.vm.provider :vmware_esxi do |esxi|
-      esxi.esxi_hostname = "192.168.86.10"
+      esxi.esxi_hostname = "192.168.1.1"
       esxi.esxi_username = "root"
-      esxi.esxi_password = "bgl@1234"
+      esxi.esxi_password = "root"
       #esxi.guest_memsize = "2048"
       #esxi.guest_numvcpus = "2"
     end
