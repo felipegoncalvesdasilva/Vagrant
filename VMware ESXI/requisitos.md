@@ -4,7 +4,6 @@
 
 ### REQUISITOS ###
 
----------------------------------------------------------------------------------------------
 ### 1 - INSTALAÇÃO DO OVFTOOL ### 
 
 https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest
