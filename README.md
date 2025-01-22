@@ -4,6 +4,9 @@
 
 
 
+
+
+
 ##### COMANDOS #####
 
 vagrant init hashicorp/bionic64     // INICIA O VAGRANT E FAZ DOWNLOAD DA ISO DO S.O
