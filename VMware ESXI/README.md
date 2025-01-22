@@ -5,22 +5,31 @@
 
 ### REQUISITOS ###
 
-1 - INSTALAÇÃO DO OVFTOOL 
+#1 - INSTALAÇÃO DO OVFTOOL# 
 
 https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest
 
-2 - CONFIGURAÇÃO DO OVFTOOL NO WINDOWS 
+
+
+#2 - CONFIGURAÇÃO DO OVFTOOL NO WINDOWS #
 
 2.1 - Copie os arquivos OVFTOOL
 
-APÓS COPIAR OS ARQUIVOS CRIE UMA PASTA NO VAGRANT E COLE O CONTEUDO
+Após copiar o conteudo, crie uma pasta dentro do vagrant e cole 
+
+
 
 2.2 - Acesse a variaveis de ambiente do sistema
 
 
 ![image](https://github.com/user-attachments/assets/a5f23611-e65a-4f26-9384-79c4856b65e9)
 
+
+
 Clique em Variaveis de ambiente
+
+
+
 
 2.1 - Variaveis de usuario 
 
