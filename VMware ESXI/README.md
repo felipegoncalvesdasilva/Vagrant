@@ -6,13 +6,13 @@
 ### REQUISITOS ###
 
 ---------------------------------------------------------------------------------------------
-###1 - INSTALAÇÃO DO OVFTOOL### 
+### 1 - INSTALAÇÃO DO OVFTOOL ### 
 
 https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest
 
 ---------------------------------------------------------------------------------------------
 
-###2 - CONFIGURAÇÃO DO OVFTOOL NO WINDOWS ###
+### 2 - CONFIGURAÇÃO DO OVFTOOL NO WINDOWS ###
 
 2.1 - Copie os arquivos OVFTOOL
 
