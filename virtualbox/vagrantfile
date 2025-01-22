@@ -1,0 +1,14 @@
+### vagrant file ###
+
+vagrant.configure("2") do |config|
+  config.vm.provider "virtualbox" do |V|
+	vb.name = "my_vm" // nome da mv
+	vb.memory = 2048  // memoria da mv
+	vb.cpus = 2 //cpu da mv
+  end
+  
+  config.vm.box = "hashicorp/bionic64" // imagem de s.o 
+  config.vm.network "forwarded_port", guest: 80, host:8090 // configuração de portas 
+  config.vm.network "public_network", ip "192.168.1.1", bridge: "placarede1" // configura ip publico e placa de rede
+  config.vm.synced_folder "site/", "/var/www/html"  // sincroniza pasta do pc para maquina virtual
+end
