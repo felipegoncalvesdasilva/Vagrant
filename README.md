@@ -1,3 +1,9 @@
+
+![vagrant-logo_large](https://github.com/user-attachments/assets/5f3f4b28-1e5f-4aab-af42-0adf73e4015d)
+
+
+
+
 ##### COMANDOS #####
 
 vagrant init hashicorp/bionic64     // INICIA O VAGRANT E FAZ DOWNLOAD DA ISO DO S.O
